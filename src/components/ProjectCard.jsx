@@ -1,4 +1,3 @@
-// src/components/ProjectCard.jsx
 import { FaGithub } from "react-icons/fa";
 import { Bookmark, BookmarkCheck } from "lucide-react";
 
