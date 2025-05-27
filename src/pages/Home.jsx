@@ -7,7 +7,7 @@ import {
   removerRepositorio,
 } from "../firebase/firestoreSalvos";
 import ProjectCard from "../components/ProjectCard";
-import ParticleBackground from "../components/ParticleBackground"; // ⬅️ NOVO
+import ParticleBackground from "../components/ParticleBackground"; 
 
 export default function Home({ query }) {
   const { user } = useAuth();
