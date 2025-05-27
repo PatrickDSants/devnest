@@ -1,4 +1,3 @@
-// src/firebase/firebaseConfig.js
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getStorage } from "firebase/storage";
@@ -13,8 +12,8 @@ const firebaseConfig = {
   measurementId: "G-T78970FSEK",
 };
 
-const app = initializeApp(firebaseConfig); // ✅ só uma vez!
+const app = initializeApp(firebaseConfig); 
 
 export const auth = getAuth(app);
 export const storage = getStorage(app);
-export default app; // exporta o app se precisar
+export default app; 
