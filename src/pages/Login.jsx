@@ -1,4 +1,3 @@
-// src/pages/Login.jsx
 import {
   getAuth,
   signInWithPopup,
