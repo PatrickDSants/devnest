@@ -9,7 +9,6 @@ export default function useGithubProjects(query = "react", perPage = 6) {
     setLoading(true);
     setError(null);
 
-    // Exemplo: busca repositórios populares com a palavra 'react'
     fetch(
       `https://api.github.com/search/repositories?q=${query}+stars:>1000&sort=stars&order=desc&per_page=${perPage}`
     )
