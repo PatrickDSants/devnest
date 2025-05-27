@@ -14,7 +14,7 @@ export default function App() {
   return (
     <Router>
       <div className="flex flex-col min-h-screen bg-zinc-950 text-white">
-        {/* SearchBar no topo com tudo incluso */}
+        
         <header className="sticky top-0 z-40 bg-zinc-900 border-b border-zinc-800">
           <SearchBar query={query} setQuery={setQuery} />
         </header>
