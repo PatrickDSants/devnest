@@ -1,4 +1,3 @@
-// src/pages/Salvos.jsx
 import { useEffect, useState } from "react";
 import { Github, X, CheckCircle } from "lucide-react";
 import { Link } from "react-router-dom";
