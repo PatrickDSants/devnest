@@ -1,4 +1,3 @@
-// src/pages/Home.jsx
 import { useEffect, useState, useRef } from "react";
 import { Github } from "lucide-react";
 import { useAuth } from "../context/AuthContext";
@@ -111,7 +110,7 @@ export default function Home({ query }) {
 
   return (
     <div className="relative min-h-screen w-full text-white font-sans z-10 overflow-hidden">
-      <ParticleBackground /> {/* ⬅️ CAMADA DE FUNDO */}
+      <ParticleBackground />
 
       <div className="relative z-10 px-6 py-10">
         <h1 className="text-4xl font-bold mb-10 border-b border-cyan-500 pb-2 w-fit">
