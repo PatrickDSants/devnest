@@ -1,10 +1,10 @@
-// src/firebase/firestoreSalvos.js
+
 import { getFirestore, doc, getDoc, setDoc, updateDoc, arrayUnion, arrayRemove } from "firebase/firestore";
 import { auth } from "./firebaseConfig";
 
 const db = getFirestore();
 
-// 🔄 Buscar os repositórios salvos do usuário
+// Buscar os repositórios salvos do usuário
 export async function getSalvosDoUsuario() {
   const user = auth.currentUser;
   if (!user) return [];
@@ -15,7 +15,7 @@ export async function getSalvosDoUsuario() {
   return snap.exists() ? snap.data().repos || [] : [];
 }
 
-// ✅ Salvar repositório no Firestore
+// Salvar repositório no Firestore
 export async function salvarRepositorio(repo) {
   const user = auth.currentUser;
   if (!user) return;
@@ -24,7 +24,7 @@ export async function salvarRepositorio(repo) {
   await setDoc(ref, { repos: arrayUnion(repo) }, { merge: true });
 }
 
-// ❌ Remover repositório do Firestore
+// Remover repositório do Firestore
 export async function removerRepositorio(repo) {
   const user = auth.currentUser;
   if (!user) return;
