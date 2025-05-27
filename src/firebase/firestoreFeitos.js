@@ -1,4 +1,3 @@
-// src/firebase/firestoreFeitos.js
 import { doc, setDoc, getDoc, getFirestore } from "firebase/firestore";
 import { auth } from "./firebaseConfig";
 
