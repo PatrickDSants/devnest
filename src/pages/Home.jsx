@@ -40,7 +40,7 @@ export default function Home({ query }) {
     setError(null);
 
     try {
-      const res = await fetch(`https://devnest-backend.vercel.app/api/repos?q=${query}&page=${page}`);
+      const res = await fetch(`https://devnest-backend-production.up.railway.app/api/repos?q=${query}&page=${page}`);
       if (!res.ok) {
         const err = await res.json();
         if (res.status === 403) setError("Limite de requisições da API do GitHub atingido.");
